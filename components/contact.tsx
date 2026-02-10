@@ -140,7 +140,7 @@ export function Contact() {
                     </div>
                   </a>
                   <a
-                    href="tel:+919555353830"
+                    href="tel:+919555953830"
                     className="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors group"
                   >
                     <div className="p-2 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
