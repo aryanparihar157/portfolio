@@ -182,12 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // --- Floating Resume CV Button Mock Toast ---
-  const cvBtn = document.getElementById('cv-download-btn');
-  cvBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    showToast("CV download initiated (Placeholder resume)");
-  });
+  // The Download CV button now downloads resume.pdf natively through HTML5 download attribute.
 
   // --- Floating Back to Top Button ---
   const backToTopBtn = document.getElementById('back-to-top');
