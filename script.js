@@ -282,7 +282,7 @@ const projectData = {
   'face-detection': {
     title: 'Face Detection & Landmark Classification',
     category: 'Computer Vision',
-    duration: 'May - July 2023 (Internship)',
+    duration: 'May - July 2025',
     bullets: [
       'Developed lightweight face detection neural network models optimized for edge devices.',
       'Supervised manual cleanup and verification of over 10,000 face images in Google Colab.',
