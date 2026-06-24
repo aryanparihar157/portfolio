@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aryan Parihar | Portfolio</title>
+  <meta name="description" content="Professional portfolio of Aryan Parihar - AI/ML Intern & Full-Stack Developer specializing in TensorFlow, React, and AWS.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+  <!-- Dynamic Glow Background -->
+  <div class="glow-bg">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="gradient-text">Aryan</span>.dev
+      </a>
+      
+      <!-- Desktop Nav -->
+      <nav class="nav-menu">
+        <a href="#about" class="nav-link active">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+          <i data-lucide="sun" class="sun-icon"></i>
+          <i data-lucide="moon" class="moon-icon"></i>
+        </button>
+        <button id="menu-toggle" class="icon-btn mobile-menu-btn" aria-label="Toggle Menu">
+          <i data-lucide="menu" class="open-icon"></i>
+          <i data-lucide="x" class="close-icon"></i>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Nav Dropdown -->
+    <div id="mobile-menu" class="mobile-menu">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#experience" class="mobile-link">Experience</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content animate-fade-in">
+          <div class="badge-container">
+            <span class="pulse-badge"></span>
+            <span class="badge-text">Open for Internships & Collaborations</span>
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Aryan Parihar</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            I build <span id="dynamic-role" class="typed-text"></span><span class="cursor">|</span>
+          </h2>
+          <p class="hero-description">
+            Computer Science student at Lovely Professional University, specializing in Machine Learning, AI models, and modern Web Stack development. Passionate about solving complex problems and automating workflows.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              View My Work <i data-lucide="arrow-right" class="btn-icon"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            <a href="#" class="btn btn-outline" id="cv-download-btn">
+              Download CV <i data-lucide="download" class="btn-icon"></i>
+            </a>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/aryanparihar157" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="GitHub">
+              <i data-lucide="github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/aryanparihar987/" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn">
+              <i data-lucide="linkedin"></i>
+            </a>
+            <a href="mailto:parihararyan88089@gmail.com" class="social-icon-link" aria-label="Email">
+              <i data-lucide="mail"></i>
+            </a>
+            <a href="tel:+919555953830" class="social-icon-link" aria-label="Phone">
+              <i data-lucide="phone"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="hero-visual animate-scale-up">
+          <div class="profile-card">
+            <div class="profile-avatar">
+              <span class="profile-initials">AP</span>
+            </div>
+            <div class="profile-info">
+              <h3>Aryan Parihar</h3>
+              <p>CS Undergrad @ LPU</p>
+              <div class="profile-location">
+                <i data-lucide="map-pin" class="loc-icon"></i> Kanpur / Punjab, India
+              </div>
+            </div>
+            <div class="profile-stats">
+              <div class="stat-item">
+                <span class="stat-number">6.75</span>
+                <span class="stat-label">CGPA</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <span class="stat-number">4+</span>
+                <span class="stat-label">Projects</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <span class="stat-number">1</span>
+                <span class="stat-label">Internship</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section scroll-reveal">
+      <div class="container">
+        <h2 class="section-title text-center">About <span class="gradient-text">Me</span></h2>
+        <div class="about-grid">
+          <div class="about-card glass">
+            <h3 class="card-title"><i data-lucide="user" class="card-icon text-primary"></i> Introduction</h3>
+            <p class="card-text">
+              I am a dedicated third-year Computer Science and Engineering student with a core focus on artificial intelligence, machine learning, and full-stack development. I enjoy taking raw, unorganized datasets and turning them into accurate predictive models, as well as crafting sleek web applications that solve real-world tasks.
+            </p>
+            <p class="card-text">
+              My technical experience extends from implementing NLP classifiers and computer vision networks to scaling containerized deployments. I'm highly motivated by automation and workflow optimization, always aiming to reduce manual overhead and improve model performance.
+            </p>
+          </div>
+          
+          <div class="about-card glass">
+            <h3 class="card-title"><i data-lucide="graduation-cap" class="card-icon text-secondary"></i> Core Interests</h3>
+            <div class="interests-tags">
+              <span class="tag tag-interest"><i data-lucide="brain-circuit"></i> Machine Learning</span>
+              <span class="tag tag-interest"><i data-lucide="binary"></i> Natural Language Processing</span>
+              <span class="tag tag-interest"><i data-lucide="eye"></i> Computer Vision</span>
+              <span class="tag tag-interest"><i data-lucide="code-2"></i> Full-Stack Web Dev</span>
+              <span class="tag tag-interest"><i data-lucide="cloud"></i> Cloud Solutions (AWS/GCP)</span>
+              <span class="tag tag-interest"><i data-lucide="gamepad-2"></i> Game Development (Unity)</span>
+            </div>
+            
+            <div class="quick-facts">
+              <h4 class="facts-title">Quick Facts</h4>
+              <ul class="facts-list">
+                <li><i data-lucide="check-circle" class="fact-check"></i> Hands-on experience with 10k+ data samples</li>
+                <li><i data-lucide="check-circle" class="fact-check"></i> 12-18% model accuracy gains in internship</li>
+                <li><i data-lucide="check-circle" class="fact-check"></i> Familiar with Docker, Kubernetes & AWS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section scroll-reveal">
+      <div class="container">
+        <h2 class="section-title text-center">Skills & <span class="gradient-text">Toolbox</span></h2>
+        <p class="section-subtitle text-center">A curation of programming languages, frameworks, cloud tools, and platforms I work with.</p>
+        
+        <div class="skills-grid">
+          <!-- Languages -->
+          <div class="skills-card glass hover-glow">
+            <div class="skills-header">
+              <div class="skills-icon-container bg-primary-light">
+                <i data-lucide="code" class="text-primary"></i>
+              </div>
+              <h3>Languages</h3>
+            </div>
+            <div class="skills-list">
+              <span class="skill-badge">Python</span>
+              <span class="skill-badge">Java</span>
+              <span class="skill-badge">JavaScript</span>
+              <span class="skill-badge">C++</span>
+              <span class="skill-badge">SQL</span>
+            </div>
+          </div>
+          
+          <!-- Frameworks & Web -->
+          <div class="skills-card glass hover-glow">
+            <div class="skills-header">
+              <div class="skills-icon-container bg-secondary-light">
+                <i data-lucide="layers" class="text-secondary"></i>
+              </div>
+              <h3>Frameworks & Web</h3>
+            </div>
+            <div class="skills-list">
+              <span class="skill-badge">React</span>
+              <span class="skill-badge">Node.js</span>
+              <span class="skill-badge">Express.js</span>
+              <span class="skill-badge">HTML & CSS</span>
+              <span class="skill-badge">Bootstrap</span>
+              <span class="skill-badge">TensorFlow</span>
+              <span class="skill-badge">NumPy</span>
+            </div>
+          </div>
+          
+          <!-- Cloud & DevOps -->
+          <div class="skills-card glass hover-glow">
+            <div class="skills-header">
+              <div class="skills-icon-container bg-accent-light">
+                <i data-lucide="cloud" class="text-accent"></i>
+              </div>
+              <h3>Cloud & DevOps</h3>
+            </div>
+            <div class="skills-list">
+              <span class="skill-badge">AWS</span>
+              <span class="skill-badge">Google Cloud</span>
+              <span class="skill-badge">Docker</span>
+              <span class="skill-badge">Kubernetes</span>
+              <span class="skill-badge">CI/CD</span>
+            </div>
+          </div>
+          
+          <!-- Databases & Tools -->
+          <div class="skills-card glass hover-glow">
+            <div class="skills-header">
+              <div class="skills-icon-container bg-violet-light">
+                <i data-lucide="database" class="text-violet"></i>
+              </div>
+              <h3>Databases & Tools</h3>
+            </div>
+            <div class="skills-list">
+              <span class="skill-badge">MongoDB</span>
+              <span class="skill-badge">MySQL</span>
+              <span class="skill-badge">Git & GitHub</span>
+              <span class="skill-badge">Google Colab</span>
+              <span class="skill-badge">Unity (Game Engine)</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Soft Skills Banner -->
+        <div class="soft-skills-container glass scroll-reveal">
+          <h4 class="soft-skills-title text-center">Core Strengths</h4>
+          <div class="soft-skills-flex">
+            <div class="soft-skill-item">
+              <i data-lucide="users"></i>
+              <span>Leadership & Teamwork</span>
+            </div>
+            <div class="soft-skill-item">
+              <i data-lucide="puzzle"></i>
+              <span>Problem Solving</span>
+            </div>
+            <div class="soft-skill-item">
+              <i data-lucide="calendar"></i>
+              <span>Project Management</span>
+            </div>
+            <div class="soft-skill-item">
+              <i data-lucide="git-branch"></i>
+              <span>Adaptability</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section scroll-reveal">
+      <div class="container">
+        <h2 class="section-title text-center">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle text-center">Some of my recent works across AI/ML, Full-Stack development, and gaming.</p>
+        
+        <!-- Project Filters -->
+        <div class="filters-container">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="ml">AI & ML</button>
+          <button class="filter-btn" data-filter="web">Full-Stack</button>
+          <button class="filter-btn" data-filter="game">Games</button>
+        </div>
+        
+        <!-- Project Grid -->
+        <div class="projects-grid">
+          <!-- Project 1: Text Classification -->
+          <div class="project-card glass hover-glow" data-category="ml">
+            <div class="project-banner banner-ml">
+              <div class="banner-overlay"></div>
+              <i data-lucide="brain-circuit" class="banner-icon"></i>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-category">AI / ML</span>
+                <span class="project-date">May-July 2025</span>
+              </div>
+              <h3 class="project-name">Text Classification using TensorFlow</h3>
+              <p class="project-desc">
+                An advanced Natural Language Processing model trained to classify complex textual datasets into pre-defined categories. Utilized TensorFlow and optimized via rigorous validation.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">TensorFlow</span>
+                <span class="tag">NLP</span>
+                <span class="tag">Machine Learning</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/aryanparihar157/Text-Classification" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i data-lucide="github"></i> Code
+                </a>
+                <button class="project-link-btn" onclick="openProjectModal('text-classification')">
+                  Read More <i data-lucide="external-link"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 2: AI VTuber / Streaming Model -->
+          <div class="project-card glass hover-glow" data-category="ml">
+            <div class="project-banner banner-stream">
+              <div class="banner-overlay"></div>
+              <i data-lucide="mic" class="banner-icon"></i>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-category">AI & Streaming</span>
+                <span class="project-date">Ongoing</span>
+              </div>
+              <h3 class="project-name">AI Model for Real-Time Streaming</h3>
+              <p class="project-desc">
+                An ongoing project developing a real-time speech and response agent. Integrates text-to-voice and conversational replies to interact dynamically with audiences during streaming.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">AI VTuber</span>
+                <span class="tag">Text-To-Speech</span>
+                <span class="tag">Real-Time</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/aryanparihar157/Ai-vtuber-model" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i data-lucide="github"></i> Code
+                </a>
+                <button class="project-link-btn" onclick="openProjectModal('ai-streaming')">
+                  Read More <i data-lucide="external-link"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 3: Face Detection & Landmarks -->
+          <div class="project-card glass hover-glow" data-category="ml">
+            <div class="project-banner banner-vision">
+              <div class="banner-overlay"></div>
+              <i data-lucide="eye" class="banner-icon"></i>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-category">Computer Vision</span>
+                <span class="project-date">2023</span>
+              </div>
+              <h3 class="project-name">Face Detection & Landmark Classification</h3>
+              <p class="project-desc">
+                Developed computer vision pipelines using TensorFlow and OpenCV to accurately identify faces and map facial landmark coordinates. Handled clean dataset creation of 10,000+ images.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">TensorFlow</span>
+                <span class="tag">Data Pipeline</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/aryanparihar157/facial-landmark-detection" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i data-lucide="github"></i> Code
+                </a>
+                <button class="project-link-btn" onclick="openProjectModal('face-detection')">
+                  Read More <i data-lucide="external-link"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 4: MERN Stack applications -->
+          <div class="project-card glass hover-glow" data-category="web">
+            <div class="project-banner banner-web">
+              <div class="banner-overlay"></div>
+              <i data-lucide="globe" class="banner-icon"></i>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-category">Full-Stack</span>
+                <span class="project-date">2024</span>
+              </div>
+              <h3 class="project-name">MERN Stack Applications</h3>
+              <p class="project-desc">
+                Full-stack web applications constructed using MongoDB, Express, React, and Node.js. Incorporates responsive user-interfaces, secure user authentication, and REST APIs.
+              </p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">NodeJS</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">REST API</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/aryanparihar157" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i data-lucide="github"></i> Code
+                </a>
+                <button class="project-link-btn" onclick="openProjectModal('mern-stack')">
+                  Read More <i data-lucide="external-link"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 5: Car Racing Game -->
+          <div class="project-card glass hover-glow" data-category="game">
+            <div class="project-banner banner-game">
+              <div class="banner-overlay"></div>
+              <i data-lucide="gamepad-2" class="banner-icon"></i>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-category">Game Dev</span>
+                <span class="project-date">2023</span>
+              </div>
+              <h3 class="project-name">Car Racing Game</h3>
+              <p class="project-desc">
+                A 3D car racing game designed in Unity. Implements custom player-controlled vehicle movement physics, tracking systems, AI race opponents, and interactive course logic.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Unity</span>
+                <span class="tag">C#</span>
+                <span class="tag">3D Physics</span>
+                <span class="tag">Game Design</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/aryanparihar157" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i data-lucide="github"></i> Code
+                </a>
+                <button class="project-link-btn" onclick="openProjectModal('car-racing')">
+                  Read More <i data-lucide="external-link"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Education Timeline -->
+    <section id="experience" class="timeline-section scroll-reveal">
+      <div class="container">
+        <h2 class="section-title text-center">Experience & <span class="gradient-text">Education</span></h2>
+        <p class="section-subtitle text-center">A timeline of my professional experience, academic achievements, and core certifications.</p>
+        
+        <div class="timeline-container">
+          <!-- Timeline Item 1: LPU -->
+          <div class="timeline-item left scroll-reveal">
+            <div class="timeline-dot bg-primary">
+              <i data-lucide="graduation-cap"></i>
+            </div>
+            <div class="timeline-content glass hover-glow">
+              <span class="timeline-date">August 2023 - Present</span>
+              <h3>Lovely Professional University</h3>
+              <h4 class="timeline-role text-primary">Bachelor of Technology - Computer Science & Engineering</h4>
+              <p class="timeline-loc">Punjab, India</p>
+              <ul class="timeline-details">
+                <li><strong>Current CGPA:</strong> 6.75 / 10.0</li>
+                <li>Focusing heavily on Machine Learning, Algorithms, Data Science, and Web Engineering.</li>
+                <li>Participating in student technical communities and code sprints.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: AI Intern -->
+          <div class="timeline-item right scroll-reveal">
+            <div class="timeline-dot bg-secondary">
+              <i data-lucide="briefcase"></i>
+            </div>
+            <div class="timeline-content glass hover-glow">
+              <span class="timeline-date">May 2023 - July 2023</span>
+              <h3>1Stop.ai</h3>
+              <h4 class="timeline-role text-secondary">AI Intern</h4>
+              <p class="timeline-loc">Remote</p>
+              <ul class="timeline-details">
+                <li>Developed machine learning models for Text Classification, Face Detection, and Landmark Classification.</li>
+                <li>Managed the preparation and data cleaning pipelines for <strong>10,000+ data samples</strong> to optimize model training.</li>
+                <li>Achieved a <strong>12-18% increase in model accuracy</strong> via hyperparameter tuning and model architecture experimentation.</li>
+                <li>Automated ML training and validation workflows using Python, NumPy, and TensorFlow, <strong>reducing manual steps by 30%</strong>.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: MERN Stack Dev Program -->
+          <div class="timeline-item left scroll-reveal">
+            <div class="timeline-dot bg-accent">
+              <i data-lucide="award"></i>
+            </div>
+            <div class="timeline-content glass hover-glow">
+              <span class="timeline-date">July 2024</span>
+              <h3>MERN Stack Pre-grad Program</h3>
+              <h4 class="timeline-role text-accent">Full MERN Stack Developer</h4>
+              <p class="timeline-loc">Online Certification</p>
+              <ul class="timeline-details">
+                <li>Completed comprehensive full-stack training covering MongoDB, Express.js, React, and Node.js.</li>
+                <li>Built real-world applications featuring REST APIs, token authentication, and state management.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4: AWS Student Community -->
+          <div class="timeline-item right scroll-reveal">
+            <div class="timeline-dot bg-violet">
+              <i data-lucide="cloud"></i>
+            </div>
+            <div class="timeline-content glass hover-glow">
+              <span class="timeline-date">2024</span>
+              <h3>AWS Student Community</h3>
+              <h4 class="timeline-role text-violet">Active Member / Certified Participant</h4>
+              <p class="timeline-loc">Kanpur / Online</p>
+              <ul class="timeline-details">
+                <li>Engaged in cloud computing workshops focusing on EC2, S3, IAM, and Serverless deployment.</li>
+                <li>Built cloud infrastructure configurations for testing full-stack web hosting and Docker deployments.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline Item 5: Gulmohar School 12th -->
+          <div class="timeline-item left scroll-reveal">
+            <div class="timeline-dot bg-primary">
+              <i data-lucide="book-open"></i>
+            </div>
+            <div class="timeline-content glass hover-glow">
+              <span class="timeline-date">April 2022 - March 2023</span>
+              <h3>Gulmohar Public School</h3>
+              <h4 class="timeline-role text-primary">Intermediate (12th Grade)</h4>
+              <p class="timeline-loc">Kanpur, Uttar Pradesh</p>
+              <ul class="timeline-details">
+                <li><strong>Result:</strong> 63.6% (PCM Stream)</li>
+                <li>Developed robust analytical and logical foundation in Physics, Chemistry, and Mathematics.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline Item 6: Gulmohar School 10th -->
+          <div class="timeline-item right scroll-reveal">
+            <div class="timeline-dot bg-secondary">
+              <i data-lucide="book-open"></i>
+            </div>
+            <div class="timeline-content glass hover-glow">
+              <span class="timeline-date">April 2020 - March 2021</span>
+              <h3>Gulmohar Public School</h3>
+              <h4 class="timeline-role text-secondary">Matriculation (10th Grade)</h4>
+              <p class="timeline-loc">Kanpur, Uttar Pradesh</p>
+              <ul class="timeline-details">
+                <li><strong>Result:</strong> 78.4%</li>
+                <li>Represented school in regional academic quizzes and science competitions.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications-section scroll-reveal">
+      <div class="container">
+        <h2 class="section-title text-center">Certificates & <span class="gradient-text">Credentials</span></h2>
+        <p class="section-subtitle text-center">Verified certificates for my educational milestones and course completions.</p>
+        
+        <div class="certs-grid">
+          <!-- Cert 1: 1Stop.ai AI Intern -->
+          <div class="cert-card glass" onclick="openCertModal('1stop-ai', 'AI Internship Certificate')">
+            <div class="cert-icon-container">
+              <i data-lucide="award" class="text-primary"></i>
+            </div>
+            <div class="cert-info">
+              <h3>AI Internship Completion</h3>
+              <p class="cert-issuer">1Stop.ai</p>
+              <span class="cert-date">July 2025</span>
+            </div>
+            <div class="cert-action">
+              <span>View details</span> <i data-lucide="chevron-right"></i>
+            </div>
+          </div>
+
+          <!-- Cert 2: MERN Stack -->
+          <div class="cert-card glass" onclick="openCertModal('mern', 'MERN Stack Development Certificate')">
+            <div class="cert-icon-container">
+              <i data-lucide="award" class="text-secondary"></i>
+            </div>
+            <div class="cert-info">
+              <h3>MERN Stack Dev Program</h3>
+              <p class="cert-issuer">Pre-Grad Program</p>
+              <span class="cert-date">July 2024</span>
+            </div>
+            <div class="cert-action">
+              <span>View details</span> <i data-lucide="chevron-right"></i>
+            </div>
+          </div>
+
+          <!-- Cert 3: AWS -->
+          <div class="cert-card glass" onclick="openCertModal('aws', 'AWS Student Community Certificate')">
+            <div class="cert-icon-container">
+              <i data-lucide="award" class="text-accent"></i>
+            </div>
+            <div class="cert-info">
+              <h3>AWS Student Community</h3>
+              <p class="cert-issuer">AWS Community</p>
+              <span class="cert-date">2024</span>
+            </div>
+            <div class="cert-action">
+              <span>View details</span> <i data-lucide="chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section scroll-reveal">
+      <div class="container">
+        <h2 class="section-title text-center">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-subtitle text-center">Have a question or want to work together? Drop me a message or connect directly.</p>
+        
+        <div class="contact-grid">
+          <!-- Info Column -->
+          <div class="contact-info-col">
+            <div class="contact-method glass hover-glow">
+              <div class="contact-icon bg-primary-light">
+                <i data-lucide="mail" class="text-primary"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Email Me</h3>
+                <a href="mailto:parihararyan88089@gmail.com" class="contact-link-text">parihararyan88089@gmail.com</a>
+                <button class="copy-btn" onclick="copyText('parihararyan88089@gmail.com', this)">
+                  <i data-lucide="copy" class="copy-icon"></i> <span>Copy</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="contact-method glass hover-glow">
+              <div class="contact-icon bg-secondary-light">
+                <i data-lucide="phone" class="text-secondary"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Call / Whatsapp</h3>
+                <a href="tel:+919555953830" class="contact-link-text">+91 9555953830</a>
+                <button class="copy-btn" onclick="copyText('+919555953830', this)">
+                  <i data-lucide="copy" class="copy-icon"></i> <span>Copy</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="contact-method glass hover-glow">
+              <div class="contact-icon bg-accent-light">
+                <i data-lucide="map-pin" class="text-accent"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Location</h3>
+                <span class="contact-link-text">Kanpur, Uttar Pradesh / Punjab, India</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Column -->
+          <div class="contact-form-col glass">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="form-name">Name</label>
+                  <input type="text" id="form-name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="form-email">Email</label>
+                  <input type="email" id="form-email" placeholder="john@example.com" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <input type="text" id="form-subject" placeholder="Project Collaboration" required>
+              </div>
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <textarea id="form-message" rows="5" placeholder="Let me know details about your project or internship opportunity..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                Send Message <i data-lucide="send" class="btn-icon"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#" class="logo"><span class="gradient-text">Aryan</span>.dev</a>
+        <p>Building high-performance machine learning models and dynamic full-stack solutions.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <div class="footer-nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-socials">
+        <h4>Connect</h4>
+        <div class="footer-icons">
+          <a href="https://github.com/aryanparihar157" target="_blank" rel="noopener noreferrer"><i data-lucide="github"></i></a>
+          <a href="https://www.linkedin.com/in/aryanparihar987/" target="_blank" rel="noopener noreferrer"><i data-lucide="linkedin"></i></a>
+          <a href="mailto:parihararyan88089@gmail.com"><i data-lucide="mail"></i></a>
+          <a href="tel:+919555953830"><i data-lucide="phone"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Aryan Parihar. All Rights Reserved. Crafted with Vanilla CSS & JS.</p>
+    </div>
+  </footer>
+
+  <!-- Project Detail Modal -->
+  <div id="project-modal" class="modal">
+    <div class="modal-content glass">
+      <button class="modal-close" onclick="closeProjectModal()">&times;</button>
+      <div id="modal-project-body">
+        <!-- Content dynamically populated via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Certificate Modal -->
+  <div id="cert-modal" class="modal">
+    <div class="modal-content glass cert-modal-content">
+      <button class="modal-close" onclick="closeCertModal()">&times;</button>
+      <h3 id="cert-modal-title" class="cert-modal-title">Certificate</h3>
+      <div class="cert-modal-body">
+        <div class="cert-document-mock">
+          <i data-lucide="award" class="cert-mock-icon"></i>
+          <h4 id="cert-doc-title">Certificate of Completion</h4>
+          <p id="cert-doc-desc">Awarded to Aryan Parihar</p>
+          <div class="cert-mock-signature">
+            <span class="sig-line">Verified Certificate</span>
+            <span class="sig-date" id="cert-doc-date">Date: 2025</span>
+          </div>
+        </div>
+        <div class="cert-modal-details">
+          <p id="cert-modal-desc-text">This is a verified certificate of completion for Aryan Parihar's accomplishments.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" class="icon-btn back-to-top-btn" aria-label="Back to Top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <!-- Notification Toast -->
+  <div id="toast" class="toast">Copied to clipboard!</div>
+
+  <!-- JavaScript Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
