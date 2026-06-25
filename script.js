@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // --- Contact Form Handling ---
+  // --- Contact Form Handling (FormSubmit AJAX Integration) ---
   const contactForm = document.getElementById('contact-form');
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
@@ -213,10 +213,36 @@ document.addEventListener('DOMContentLoaded', () => {
       const subject = document.getElementById('form-subject').value;
       const message = document.getElementById('form-message').value;
 
-      // Mock submit validation success
       if (name && email && subject && message) {
-        showToast(`Thank you, ${name}! Your message has been sent successfully.`);
-        contactForm.reset();
+        showToast("Sending your message...");
+
+        // Submit form asynchronously using FormSubmit API
+        fetch("https://formsubmit.co/ajax/parihararyan88089@gmail.com", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify({
+            name: name,
+            email: email,
+            _subject: `New Portfolio Message: ${subject}`,
+            message: message
+          })
+        })
+        .then(response => response.json())
+        .then(data => {
+          if (data.success === "true") {
+            showToast(`Thank you, ${name}! Your message has been sent successfully.`);
+            contactForm.reset();
+          } else {
+            showToast("Oops! There was an issue sending your message. Please try again.");
+          }
+        })
+        .catch(error => {
+          console.error("FormSubmit Error:", error);
+          showToast("Failed to connect to the mail server. Please try again later.");
+        });
       } else {
         showToast("Please fill out all required fields.");
       }
