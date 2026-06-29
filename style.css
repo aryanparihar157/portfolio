@@ -632,6 +632,14 @@ body.light-theme .moon-icon { display: none; }
   color: #ffffff;
 }
 
+.profile-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
 .profile-info h3 {
   font-family: var(--font-heading);
   font-size: 1.4rem;
