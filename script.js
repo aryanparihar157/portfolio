@@ -284,10 +284,10 @@ const projectData = {
     category: 'AI & Natural Language Processing',
     duration: 'May - July 2025',
     bullets: [
-      'Engineered an NLP text classifier using TensorFlow/Keras and pre-trained Embeddings.',
-      'Trained the neural network using highly curated ethical data blocks to prevent bias.',
-      'Evaluated predictions using Accuracy, Recall, F1-Score, and Precision matrices.',
-      'Optimized tokenization parameters and embedding dimensions, boosting accuracy by 14%.'
+      'Built an NLP text classifier with TensorFlow/Keras and pre-trained embeddings.',
+      'Trained on a curated, balanced dataset to reduce bias between categories.',
+      'Evaluated with accuracy, precision, recall, and F1-score.',
+      'Tuned tokenization and embedding dimensions, improving accuracy by 14%.'
     ],
     tech: ['Python', 'TensorFlow', 'NLP', 'Machine Learning', 'NumPy', 'Keras'],
     codeLink: 'https://github.com/aryanparihar157/Text-Classification'
@@ -297,10 +297,10 @@ const projectData = {
     category: 'AI & Voice Processing',
     duration: 'May 2023 - Ongoing',
     bullets: [
-      'Architecting a real-time conversational agent targeting streaming broadcasts.',
-      'Integrating Low-Latency Text-To-Voice models to speak text responses dynamically.',
-      'Developing memory persistence to maintain context across active conversations.',
-      'Currently testing response generation latencies to minimize lag down to under 500ms.'
+      'Building a real-time conversational agent for live streams.',
+      'Integrating low-latency text-to-speech so replies are spoken aloud.',
+      'Adding conversation memory so the agent keeps context across a stream.',
+      'Currently optimizing end-to-end response latency, targeting under 500 ms.'
     ],
     tech: ['Python', 'AI VTuber', 'Text-To-Speech', 'NLP', 'AsyncIO', 'Real-Time APIs'],
     codeLink: 'https://github.com/aryanparihar157/Ai-vtuber-model'
@@ -310,10 +310,10 @@ const projectData = {
     category: 'Computer Vision',
     duration: 'May - July 2025',
     bullets: [
-      'Developed lightweight face detection neural network models optimized for edge devices.',
-      'Supervised manual cleanup and verification of over 10,000 face images in Google Colab.',
-      'Mapped 68 facial landmark coordinates with high precision for facial layout orientation.',
-      'Attained landmark coordinate alignment precision scores of up to 99.7%.'
+      'Built lightweight face detection models suited to low-power devices.',
+      'Cleaned and verified a dataset of 10,000+ face images in Google Colab.',
+      'Predicted 68 facial landmark points per face.',
+      'Reached landmark alignment precision of up to 99.7%.'
     ],
     tech: ['Python', 'TensorFlow', 'OpenCV', 'Google Colab', 'Computer Vision', 'NumPy'],
     codeLink: 'https://github.com/aryanparihar157/facial-landmark-detection'
@@ -323,10 +323,10 @@ const projectData = {
     category: 'Full-Stack Development',
     duration: 'Completed July 2024',
     bullets: [
-      'Coded responsive web frontends using React.js and CSS modules.',
-      'Created structured REST APIs using Node.js and Express to route database actions.',
-      'Designed transactional document schemas in MongoDB, securing connections using Mongoose.',
-      'Implemented JSON Web Token (JWT) user sessions, passwords encryption, and route authorization.'
+      'Built responsive frontends with React and CSS modules.',
+      'Wrote REST APIs in Node.js and Express.',
+      'Designed MongoDB schemas and data access with Mongoose.',
+      'Implemented JWT sessions, password hashing, and protected routes.'
     ],
     tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT Auth', 'REST API'],
     codeLink: 'https://github.com/aryanparihar157'
@@ -336,10 +336,10 @@ const projectData = {
     category: 'Game Development',
     duration: 'May - July 2023',
     bullets: [
-      'Programmed rigid body physics controllers in C# for vehicle acceleration and drifting dynamics.',
-      'Constructed track layouts using modular assets, implementing collision boundary checkpoints.',
-      'Created intelligent AI opponents that follow optimal path nodes around courses.',
-      'Polished user experience with particle system engine exhausts, tire marks, and responsive HUD dashboards.'
+      'Wrote C# rigidbody controllers for acceleration, braking, and drifting.',
+      'Built tracks from modular assets with checkpoint-based lap tracking.',
+      'Added AI opponents that follow waypoint racing lines.',
+      'Added exhaust particles, tire marks, and a speed/lap HUD.'
     ],
     tech: ['Unity Engine', 'C# Scripting', '3D Physics', 'Game Design', 'AI Pathfinding'],
     codeLink: 'https://github.com/aryanparihar157'
@@ -363,20 +363,19 @@ function openProjectModal(projectId) {
       <div class="modal-proj-meta">${data.category} • ${data.duration}</div>
     </div>
     <div class="modal-proj-body">
-      <h4>Project Overview</h4>
-      <p>Here is an in-depth breakdown of key highlights and technical objectives achieved in this project:</p>
+      <h4>What I Did</h4>
       <ul class="modal-proj-list">
         ${bulletsHtml}
       </ul>
       
-      <h4>Technologies & Libraries Employed</h4>
+      <h4>Tech Stack</h4>
       <div class="project-tags">
         ${techHtml}
       </div>
     </div>
     <div class="modal-proj-footer">
       <a href="${data.codeLink}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-        <i data-lucide="github"></i> View GitHub Code
+        <i data-lucide="github"></i> View Code on GitHub
       </a>
     </div>
   `;
@@ -407,25 +406,41 @@ window.addEventListener('click', (e) => {
   }
 });
 
-// --- Certificate Modals Data Directory ---
+// --- Certificate Data ---
+// To show a local certificate, put the file in certificates/ and set `file`.
+// Google Drive links provide instant viewing and embedded preview.
 const certData = {
   '1stop-ai': {
     title: 'AI Internship Certificate',
-    issuer: '1Stop.ai Services',
-    date: 'May - July 2025',
-    desc: 'Awarded for completing hands-on AI intern tasks, building and optimizing Text Classification, Face Detection, and Facial Landmark estimation networks. Verified skills in Python, NumPy, and TensorFlow development.'
+    issuer: '1Stop.ai',
+    date: 'July 2025',
+    desc: 'Issued on completing the AI internship (May–July 2025), where I built text classification, face detection, and facial landmark models in Python with TensorFlow and NumPy.',
+    driveUrl: 'https://drive.google.com/file/d/1sP92nInGqX66Jnf-yFPwbgNCaDlUuwZ0/view?usp=sharing',
+    driveId: '1sP92nInGqX66Jnf-yFPwbgNCaDlUuwZ0',
+    secondaryUrl: 'https://drive.google.com/file/d/18Vbu-v3we98KrEVNrHq2W73I76ygk5E1/view?usp=sharing',
+    secondaryLabel: 'Completion Letter / LOR',
+    file: null,
+    verifyUrl: null
   },
   'mern': {
     title: 'MERN Stack Development Certificate',
     issuer: 'Pre-Grad Certification Program',
     date: 'July 2024',
-    desc: 'Completed comprehensive practical developer curriculum covering single page React applications, secure authentication servers, MongoDB schemas, and REST API deployment strategies.'
+    desc: 'Issued on completing a full-stack program covering React, Node.js, Express, MongoDB, JWT authentication, and REST APIs.',
+    driveUrl: 'https://drive.google.com/file/d/1lKa-PnnuNrxBui5M4dz3wPXcRSUNb167/view?usp=sharing',
+    driveId: '1lKa-PnnuNrxBui5M4dz3wPXcRSUNb167',
+    file: null,
+    verifyUrl: null
   },
   'aws': {
     title: 'AWS Student Community Certificate',
-    issuer: 'AWS Student Community India',
-    date: '2024 Partner Event',
-    desc: 'Awarded for participating in AWS Cloud Computing cohorts. Trained in launching EC2 virtual machines, managing S3 buckets, setting up IAM security protocols, and hosting Docker container servers.'
+    issuer: 'AWS Student Community',
+    date: '2024',
+    desc: 'Issued for taking part in AWS cloud workshops covering EC2, S3, IAM, and container hosting.',
+    driveUrl: 'https://drive.google.com/file/d/11KH-dDfirWhonFElBoKjJK4JIdcDfxau/view?usp=sharing',
+    driveId: '11KH-dDfirWhonFElBoKjJK4JIdcDfxau',
+    file: null,
+    verifyUrl: null
   }
 };
 
@@ -435,12 +450,62 @@ function openCertModal(certId, titleText) {
   if (!data) return;
 
   const modal = document.getElementById('cert-modal');
-  
+  const media = document.getElementById('cert-modal-media');
+  const mockDoc = document.getElementById('cert-document-mock');
+  const meta = document.getElementById('cert-modal-meta');
+  const docTitle = document.getElementById('cert-doc-title');
+  const docDate = document.getElementById('cert-doc-date');
+
   document.getElementById('cert-modal-title').textContent = data.title;
-  document.getElementById('cert-doc-title').textContent = data.title;
-  document.getElementById('cert-doc-desc').textContent = `Verified Credential of Completion: Aryan Parihar`;
-  document.getElementById('cert-doc-date').textContent = `Issued: ${data.date} | Issuer: ${data.issuer}`;
+  if (meta) meta.textContent = `${data.issuer} · ${data.date}`;
+  if (docTitle) docTitle.textContent = data.title;
+  if (docDate) docDate.textContent = `Issued: ${data.date} | Issuer: ${data.issuer}`;
   document.getElementById('cert-modal-desc-text').textContent = data.desc;
+
+  if (media) {
+    media.innerHTML = '';
+    let hasMedia = false;
+    let linksHtml = '';
+
+    if (data.file) {
+      hasMedia = true;
+      if (data.file.toLowerCase().endsWith('.pdf')) {
+        media.innerHTML = `<iframe src="${data.file}" title="${data.title}"></iframe>`;
+      } else {
+        media.innerHTML = `<img src="${data.file}" alt="${data.title} issued to Aryan Parihar" loading="lazy">`;
+      }
+      linksHtml += `<a class="cert-open-link" href="${data.file}" target="_blank" rel="noopener noreferrer"><i data-lucide="external-link"></i> Open full size</a>`;
+    } else if (data.driveId) {
+      hasMedia = true;
+      media.innerHTML = `<iframe src="https://drive.google.com/file/d/${data.driveId}/preview" title="${data.title}" allow="autoplay" loading="lazy"></iframe>`;
+      if (data.driveUrl) {
+        linksHtml += `<a class="cert-open-link" href="${data.driveUrl}" target="_blank" rel="noopener noreferrer"><i data-lucide="external-link"></i> View on Google Drive</a>`;
+      }
+    }
+
+    if (data.secondaryUrl) {
+      const secLabel = data.secondaryLabel || 'View Document';
+      linksHtml += `<a class="cert-open-link" href="${data.secondaryUrl}" target="_blank" rel="noopener noreferrer"><i data-lucide="file-text"></i> ${secLabel}</a>`;
+    }
+
+    if (data.verifyUrl) {
+      linksHtml += `<a class="cert-open-link" href="${data.verifyUrl}" target="_blank" rel="noopener noreferrer"><i data-lucide="badge-check"></i> Verify credential</a>`;
+    }
+
+    if (linksHtml) {
+      media.innerHTML += `<div class="cert-links-container">${linksHtml}</div>`;
+    }
+
+    if (hasMedia) {
+      media.style.display = 'block';
+      if (mockDoc) mockDoc.style.display = 'none';
+    } else {
+      media.style.display = 'none';
+      if (mockDoc) mockDoc.style.display = 'block';
+    }
+  }
+
+  lucide.createIcons();
 
   modal.classList.add('active');
   document.body.style.overflow = 'hidden';
